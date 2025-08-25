@@ -1,0 +1,273 @@
+┌──(Akarsh㉿leo)-[~]
+└─$ ls
+Documents Downloads Music Pictures 
+Description: lists files and directories in current location
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ pwd
+/home/Akarsh
+Description: Shows the current directory you are in.
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ ls -l
+Description: Displays detailed info (permission, owner, size, time, date)
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ ls -a 
+. .. .bashrc .profile
+Description: Lists all hidden files (.files)
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ cd Documents
+Prompt changes to:
+
+text
+┌──(Akarsh㉿leo)-[/Documents]
+└─$ 
+Description: Move into another directory
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ cd ..
+Description: Move to parent directory
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ mkdir directory_name
+Description: Creates new directory
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ rmdir test_dir
+Description: Deletes an empty directory
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ rm -r directory_name
+Description: Deletes a folder and its contents
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ touch file_name.txt
+Description: Creates a new empty file
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ cp file.txt test.txt
+Description: Copies a file to another file in same directory
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ cp -r Documents Alpha
+Alpha folder is created
+Description: Copies a folder with all contents
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ mv file.txt newfile.txt
+Description: Renames the file
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ mv file.txt /home/Akarsh/Documents/
+Description: Move file to another folder
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ rm file.txt 
+Description: Deletes a file
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ cat file.txt
+Hello World!
+Wellcome to Linux
+Description: Displays file contents
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ tac file.txt
+Wellcome to linux
+Hello World!
+Description: Displays file in reverse
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ more file.txt
+Description: View file page by page
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ less file.txt
+Description: Advanced file viewer
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ head file.txt
+Line1
+Line2
+...
+Line10
+Description: Show first 10 lines of a file
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ tail file.txt
+Description: Show last 10 lines of a file
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ zip -9 zip_file_name file1 file2 ...
+Description: Compress files into a .zip archive
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ unzip -d <dir> zip_file_name
+Description: Extract file into a specific directory
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ cat file.txt
+Hello Linux 
+Wecome to kali
+Description: Concatenate and display file
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ grep -n keyword [file]
+Welcome to (Linux)
+Description: Search a text in a file
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ sed -n 'subcommand/new_pattern/target_pattern' file.txt
+Description: Search, find, replace, insert, or delete text in a file
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ ping google.com
+Description: Checks connectivity with Google’s public DNS server
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ sort -n file.txt
+Description: Rearrange a file’s content in order
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ cut -d ":" -f 2 file.txt
+prints only 2nd part of every line
+Description: Pick out a specific column
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ diff -c file1.txt file2.txt
+Description: Compares two files and prints their differences
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ locate file.txt
+/home/Akarsh/Documents/files.txt
+Description: Finds files/directories very quickly via database
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ find path/to/folder -type f -name "file"
+/home/Akarsh/Documents/file
+Description: Searches for a file within a directory
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ sudo nano file.txt
+Description: Superuser allows editing file
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ sudo --help
+Description: Shows quick reference of sudo options
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ chmod u+r file.txt
+Description: Gives user read permission
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ chmod g-w file.txt
+Description: Removes group write permission
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ chown admin-bhagesh file.txt
+Description: Changes file ownership
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ chown : newgroup file.txt
+Description: Make all group members the owner
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ df
+Description: Show disk usage of mounted filesystems
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ du /home/Akarsh
+Description: Check size and path of directory
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ top -p 1234
+Description: Displays running/sleeping/stopped processes
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ htop
+Description: Displays all currently running processes
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ ps -r
+Description: Shows only running processes
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ uname -a
+Description: Displays system information
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ sudo hostname Ben
+┌──(Ben㉿leo)-[~]
+└─$ 
+Description: Temporarily change hostname to Ben
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ time ls
+Description: Measure execution time
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ watch df -h
+Description: Monitors disk usage every 2 seconds
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ kill -9 1234
+Description: Kill process immediately
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ wget -O brave.deb https://laptop-updates.brave.com/latest/stable/amd64/brave-browser-release-stable_amd64.deb
+Description: Download Brave browser installer
+
+text
+┌──(Akarsh㉿leo)-[~]
+└─$ sudo shutdown
+Description: Shutdown Linux system
